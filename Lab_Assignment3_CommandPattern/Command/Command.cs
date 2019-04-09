@@ -21,22 +21,6 @@ namespace Lab_Assignment3_CommandPattern
         }
     }
 
-    public class OrderShakeCommand : Command
-    {
-        public Cooks Cook { get; set; }
-
-        public OrderShakeCommand(Cooks cook)
-        {
-            Cook = cook;
-        }
-
-        public void Execute()
-        {
-            Cook.MakeItem1();
-        }
-    }
-
-
     public class MacroCommand : Command
     {
         private Command[] Commands { get; set; }

@@ -45,13 +45,10 @@
     <Compile Include="Command\Command.cs" />
     <Compile Include="ConcreteObjects\American\BurgerMenu.cs" />
     <Compile Include="ConcreteObjects\American\PizzaMenu.cs" />
-    <Compile Include="ConcreteObjects\American\RibsnShake.cs" />
+    <Compile Include="ConcreteObjects\American\OrderShake.cs" />
     <Compile Include="ConcreteObjects\Japanese\RunningSushi.cs" />
     <Compile Include="Factory\SushiPieces.cs" />
     <Compile Include="Factory\ToppingFactory.cs" />
-    <Compile Include="ConcreteObjects\BurgerMenu.cs" />
-    <Compile Include="ConcreteObjects\PizzaMenu.cs" />
-    <Compile Include="ConcreteObjects\RibsnShake.cs" />
     <Compile Include="Invoker\Invokers.cs" />
     <Compile Include="Invoker\Waitress.cs" />
     <Compile Include="Program.cs" />
