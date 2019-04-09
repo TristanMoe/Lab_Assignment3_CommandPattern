@@ -18,7 +18,7 @@ namespace Lab_Assignment3_CommandPattern
         {
             foreach (var command in CommandQueue)
             {
-                var safeThread = new ThreadSafeMechanism(command);
+                var safeThread = new ExceptionHandling(command);
                 ThreadDelegator.StartThread(safeThread);
             }
         }
