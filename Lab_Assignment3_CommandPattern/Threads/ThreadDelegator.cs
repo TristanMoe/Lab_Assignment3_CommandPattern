@@ -9,7 +9,7 @@ namespace Lab_Assignment3_CommandPattern
 {
     public class ThreadDelegator
     {
-        public static void StartThread(ThreadSafeMechanism threadSafeClient)
+        public static void StartThread(ExceptionHandling threadSafeClient)
         {
             var thread = new Thread(threadSafeClient.SafeThread);
             thread.Start();

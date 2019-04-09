@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lab_Assignment3_CommandPattern
 {
-    public class ThreadSafeMechanism
+    public class ExceptionHandling
     {
         private Command Task { get; set; }
 
-        public ThreadSafeMechanism(Command commandTask)
+        public ExceptionHandling(Command commandTask)
         {
             this.Task = commandTask;
         }
