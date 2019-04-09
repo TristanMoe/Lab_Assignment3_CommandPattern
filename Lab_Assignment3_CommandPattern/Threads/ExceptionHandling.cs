@@ -3,26 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab_Assignment3_CommandPattern.Invoker;
 
 namespace Lab_Assignment3_CommandPattern
 {
     public class ExceptionHandling
     {
-        private Command Task { get; set; }
+        private Invokers Invoker { get; set; }
 
-        public ExceptionHandling(Command commandTask)
+        public ExceptionHandling(Invokers invoker)
         {
-            this.Task = commandTask;
+            this.Invoker = invoker;
         }
 
         /// <summary>
         /// Encapsulates in try/catch block
         /// </summary>
-        public void SafeThread()
+        public void InvokeCommand()
         {
             try
             {
-                    Task.Execute();
+                Invoker.Command.Execute();
             }
             catch (Exception e)
             {

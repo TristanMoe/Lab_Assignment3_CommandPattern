@@ -11,7 +11,7 @@ namespace Lab_Assignment3_CommandPattern
     {
         public static void StartThread(ExceptionHandling threadSafeClient)
         {
-            var thread = new Thread(threadSafeClient.SafeThread);
+            var thread = new Thread(threadSafeClient.InvokeCommand);
             thread.Start();
         }
     }

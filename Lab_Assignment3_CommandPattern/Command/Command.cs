@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lab_Assignment3_CommandPattern.Receivers;
 
 namespace Lab_Assignment3_CommandPattern
 {
@@ -19,6 +20,22 @@ namespace Lab_Assignment3_CommandPattern
             //Do nothing
         }
     }
+
+    public class OrderShakeCommand : Command
+    {
+        public Cooks Cook { get; set; }
+
+        public OrderShakeCommand(Cooks cook)
+        {
+            Cook = cook;
+        }
+
+        public void Execute()
+        {
+            Cook.MakeItem1();
+        }
+    }
+
 
     public class MacroCommand : Command
     {
