@@ -2,11 +2,11 @@
 
 namespace Lab_Assignment3_CommandPattern.Receivers
 {
-    public class Cook
+    public class AmericanCook
     {
         #region Constructor
 
-        public Cook()
+        public AmericanCook()
         {
             
         }
