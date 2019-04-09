@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab_Assignment3_CommandPattern.Receivers
+namespace Lab_Assignment3_CommandPattern
 {
     public class AmericanCook : Cooks
     {

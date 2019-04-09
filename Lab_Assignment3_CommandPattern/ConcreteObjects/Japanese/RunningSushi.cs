@@ -4,7 +4,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using Lab_Assignment3_CommandPattern.Receivers;
 
 namespace Lab_Assignment3_CommandPattern.ConcreteObjects.Japanese
 {
