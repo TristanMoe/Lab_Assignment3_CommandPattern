@@ -18,6 +18,7 @@ namespace Lab_Assignment3_CommandPattern.ConcreteObjects.Japanese
         }
         public void Execute()
         {
+            //Endless sushi, a true SushiMaster is tireless 
             while (true)
             {
                 foreach (var topping in ToppingSelection)

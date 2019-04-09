@@ -15,6 +15,7 @@ namespace Lab_Assignment3_CommandPattern
             {
                 case "shrimp": return new Shrimp();
                 case "salmon": return new Salmon();
+                case "octopus": return new Octupus();
                 default: throw new Exception("Unknown Sushi piece");
             }
            
