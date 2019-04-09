@@ -46,6 +46,7 @@
     <Compile Include="ConcreteObjects\BurgerMenu.cs" />
     <Compile Include="ConcreteObjects\PizzaMenu.cs" />
     <Compile Include="ConcreteObjects\RibsnShake.cs" />
+    <Compile Include="Invoker\Waitress.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receivers\AmericanCook.cs" />
