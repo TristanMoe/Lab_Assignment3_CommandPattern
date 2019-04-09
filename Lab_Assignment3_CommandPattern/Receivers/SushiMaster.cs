@@ -29,7 +29,6 @@ namespace Lab_Assignment3_CommandPattern
             var sushiPiece = ToppingFactory.CreateSushiPiece(toppingType); 
             Console.Write($"Created {sushiPiece.Print()}");
         }
-
         #endregion
     }
 }
