@@ -2,18 +2,24 @@
 
 namespace Lab_Assignment3_CommandPattern
 {
-    public class AmericanCook
+    public class AmericanCook : Cooks
     {
-        #region Constructor
+        #region Methods
 
-        public AmericanCook()
+        public void MakeItem1()
         {
-            
+            MakeShake();
         }
 
-        #endregion
+        public void MakeItem2()
+        {
+            MakePizzaBurger();
+        }
 
-        #region Methods
+        public void MakeItem3()
+        {
+            MakeRibs();
+        }
 
         public void MakeShake()
         {
