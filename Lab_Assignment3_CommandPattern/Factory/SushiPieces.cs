@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lab_Assignment3_CommandPattern
 {
-    public interface SushiPiece
+    public interface ISushiPiece
     {
         string Print(); 
     }
 
-    public class Salmon : SushiPiece
+    public class Salmon : ISushiPiece
     {
         public string Print()
         {
@@ -19,7 +19,7 @@ namespace Lab_Assignment3_CommandPattern
         }
     }
 
-    public class Shrimp : SushiPiece
+    public class Shrimp : ISushiPiece
     {
         public string Print()
         {
@@ -27,7 +27,7 @@ namespace Lab_Assignment3_CommandPattern
         }
     }
 
-    public class Octupus : SushiPiece
+    public class Octupus : ISushiPiece
     {
         public string Print()
         {

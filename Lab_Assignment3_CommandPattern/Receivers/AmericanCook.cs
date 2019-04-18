@@ -1,26 +1,11 @@
 ﻿using System;
-using Lab_Assignment3_CommandPattern.Receivers;
+using System.Threading;
 
 namespace Lab_Assignment3_CommandPattern
 {
-    public class AmericanCook : Cooks
+    public class AmericanCook 
     {
         #region Methods
-
-        public void MakeItem1()
-        {
-            MakeShake();
-        }
-
-        public void MakeItem2()
-        {
-            MakePizzaBurger();
-        }
-
-        public void MakeItem3()
-        {
-            MakeRibs();
-        }
 
         public void MakeShake()
         {
@@ -30,22 +15,25 @@ namespace Lab_Assignment3_CommandPattern
             Console.WriteLine("Finished shake!");
         }
 
-        public void MakePizzaBurger()
+        public void MakeBurger()
         {
-            Console.WriteLine("Toasting bread...");
-            Console.WriteLine("Adding cheese and salami...");
-            Console.WriteLine("Melting ingredients...");
-            Console.WriteLine("Finished pizzaburger!");
+            Console.WriteLine("Slicing tomatoes, cucumber and salad");
+            Console.WriteLine("Grills burger patty");
+            Console.WriteLine("Adds seasoning");
+            Console.WriteLine("Adds content between two buns");
+            Console.WriteLine("Burger is ready to be served");
         }
 
-        public void MakeRibs()
+        public void MakePizza()
         {
-            Console.WriteLine("Cleaning meat...");
-            Console.WriteLine("Marinating ribs...");
-            Console.WriteLine("Grill ribs...");
-            Console.WriteLine("Finished ribs!");
+            Console.WriteLine("Slices tomatoes & peppers");
+            Console.WriteLine("Grates cheese");
+            Console.WriteLine("Rolls dough");
+            Console.WriteLine("Adds content on pizza dough");
+            Console.WriteLine("Cooks in oven");
+            Thread.Sleep(5000);
+            Console.WriteLine("Pizza is ready to be served");
         }
-
         #endregion 
     }
 

@@ -43,10 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command\Command.cs" />
-    <Compile Include="ConcreteObjects\American\BurgerMenu.cs" />
-    <Compile Include="ConcreteObjects\American\PizzaMenu.cs" />
-    <Compile Include="ConcreteObjects\American\OrderShake.cs" />
-    <Compile Include="ConcreteObjects\Japanese\RunningSushi.cs" />
+    <Compile Include="ConcreteObjects\American Orders\OrderBurgerMenu.cs" />
+    <Compile Include="ConcreteObjects\American Orders\OrderPizzaMenu.cs" />
+    <Compile Include="ConcreteObjects\American Orders\OrderShake.cs" />
+    <Compile Include="ConcreteObjects\Japanese Orders\OrderRunningSushi.cs" />
     <Compile Include="Factory\SushiPieces.cs" />
     <Compile Include="Factory\ToppingFactory.cs" />
     <Compile Include="Invoker\Invokers.cs" />
@@ -55,7 +55,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receivers\AmericanCook.cs" />
     <Compile Include="Receivers\SushiMaster.cs" />
-    <Compile Include="Receivers\Cooks.cs" />
     <Compile Include="Threads\ThreadDelegator.cs" />
     <Compile Include="Threads\ThreadQueue.cs" />
     <Compile Include="Threads\ExceptionHandling.cs" />

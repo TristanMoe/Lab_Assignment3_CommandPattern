@@ -9,9 +9,20 @@ namespace Lab_Assignment3_CommandPattern
 {
     class Waitress : Invokers
     {
-        public Command Command { get; set; }
+        public ICommand Command { get; set; }
 
-        public Waitress(Command command)
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        public Waitress()
+        {
+        }
+
+        /// <summary>
+        /// Explicit Constructor
+        /// </summary>
+        /// <param name="command"></param>
+        public Waitress(ICommand command)
         {
             this.Command = command;
         }

@@ -2,6 +2,6 @@
 {
     public interface Invokers
     {
-        Command Command { get; set; }
+        ICommand Command { get; set; }
     }
 }

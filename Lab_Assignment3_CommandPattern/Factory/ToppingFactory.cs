@@ -9,7 +9,7 @@ namespace Lab_Assignment3_CommandPattern
 {
     public class ToppingFactory
     {
-        public SushiPiece CreateSushiPiece(string type)
+        public ISushiPiece CreateSushiPiece(string type)
         {
             switch (type.ToLower())
             {

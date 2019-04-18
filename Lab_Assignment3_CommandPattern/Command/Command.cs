@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lab_Assignment3_CommandPattern.Receivers;
 
 namespace Lab_Assignment3_CommandPattern
 {
-    public interface Command
+    public interface ICommand
     {
         void Execute(); 
     }
 
     //Null object 
-    public class NoCommand : Command
+    public class NoCommand : ICommand
     {
         public void Execute()
         {
@@ -21,11 +20,11 @@ namespace Lab_Assignment3_CommandPattern
         }
     }
 
-    public class MacroCommand : Command
+    public class MacroCommand : ICommand
     {
-        private Command[] Commands { get; set; }
+        private ICommand[] Commands { get; set; }
 
-        public MacroCommand(Command[] commands)
+        public MacroCommand(ICommand[] commands)
         {
             this.Commands = commands;
         }
