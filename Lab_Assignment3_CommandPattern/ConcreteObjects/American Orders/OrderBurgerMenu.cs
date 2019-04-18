@@ -18,7 +18,7 @@ namespace Lab_Assignment3_CommandPattern.ConcreteObjects
         {
             Console.WriteLine("_____________________AmericanCook____________________________");
             Cook.MakeShake();
-            Cook.MakePizza();
+            Cook.MakeBurger();
             Console.WriteLine("_____________________________________________________________");
             Console.WriteLine();
         }
